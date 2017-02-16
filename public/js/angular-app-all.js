@@ -122,14 +122,13 @@ myApp.controller('MembersareaController', function($scope, $http, $window){
 		}			
 		$http({
 			method: "POST",
-			url: "accounts/api-do-login",
+			url: "login",
 			data: postdata,
 		}).then(function onSuccessCallback(respdata){
 			if (respdata.status == true){
 				$scope.returned = 2;
 				$scope.returned_success = respdata.message;
-				window.location.href = '/membersarea';
-				return;
+				window.location.href = 'membersarea';
 			}
 			$scope.returned = 1;
 			$scope.returned_error = "Error occured, please try again.";

@@ -13,10 +13,16 @@
 Route::controller('accounts', 'AccountsController');
 Route::controller('perks', 'PerksController');
 Route::controller('web', 'WebController');
+
+$this->post('login', 'Auth\AuthController@login');
+$this->get('logout', 'Auth\AuthController@logout');
+$this->post('register', 'Auth\AuthController@register');
+
 // Password Reset Routes...
-$this->get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
 $this->post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
 $this->post('password/reset', 'Auth\PasswordController@reset');
+
+
 
 Route::get('transactions', function () {
     return view('employees-transactions');
@@ -39,6 +45,9 @@ Route::get('/forgot-password', function () {
 });
 Route::get('/create-password', function () {
     return view('create-password');
+});
+Route::get('/reset-password', function () {
+    return view('reset-password');
 });
 Route::get('/yeeperks', function () {
     return view('yeeperks');
@@ -91,3 +100,7 @@ Route::get('/merch___', function () {
         $isComplete = false;
     }
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

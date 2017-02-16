@@ -117,7 +117,7 @@ class AccountsController extends Controller
             Log::info("Login attempt by".$data["email"]);
             return ["status"=>false, "message"=>"Incorrect credentials"];
         }
-        return view('yeeperks');//["status"=>true, "message"=>"Authentication Successful"];
+        return ["status"=>true, "message"=>"Authentication Successful"];
     }
 
     public function getApiLoadProfile(){
