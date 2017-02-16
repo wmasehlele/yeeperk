@@ -1,0 +1,393 @@
+/*
+ *Main Stylesheet
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-family: 'Lato'; 
+    background: #000;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-family: 'Lato';    
+}
+/* ----------------------------------------------------------------------------Start Navbar------------------------------------------------------------------------------------------------------ */
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.0);
+    border-color: #E7E7E7;
+    border-bottom: 0px;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #ddd;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	color: rgb(34, 74, 221);
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFF;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #FFF;
+    /*background-color: #E7E7E7;*/
+   
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.control-input{
+	border-radius: 0px !important;
+}
+/* ----------------------------------------------------------------------------End Navbar------------------------------------------------------------------------------------------------------*/
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+        background: rgba(0, 0, 0, 0.9);/*#222;*/
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 100%;
+    padding-top: 20%;
+    text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../images/welcome.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;   
+}
+.btn{
+	border-radius: 0px !important;
+}
+.carousel,
+.carousel-inner{
+	height: 100% !important;
+}
+.content > h1{
+	padding: 5px;
+	color: #ffffff;
+}
+
+.about-section {
+    height: auto;
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    text-align: center;
+    background: #fff;
+    color: #000;
+    font-weight: 10px !important;
+}
+.about-us-content-intro > p{
+	font-size: 18px;
+	text-align: center;
+	line-height: 150%;
+	padding: 5%;
+}
+.about-us-content-details .inner-detail > p{
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	padding: 5%;
+}
+.about-section .col-lg-12 > h4,
+.about-us-content-details .inner-detail > h4,h3{
+	color: #000;
+}
+.about-us-content-details .inner-detail{
+	text-align: center;
+}
+.about-us-content-details .icons{
+	font-size: 50px;
+	color: rgb(34, 74, 221);
+	border: 0px solid #A3A3A3;
+}
+
+.services-section {
+    height: auto;
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../images/services-bg.jpeg') no-repeat center center fixed; 
+}
+.services-content-details .icons{
+	font-size: 50px;
+	color: rgb(34, 74, 221);
+	border: 0px solid #A3A3A3;
+}
+.services-section .col-lg-12 > h1{
+	color: #fff;
+}
+.services-content-details .services-inner-detail > h1,h2,h3,h4,h5{
+	color: #fff;
+}
+.services-content-details .services-inner-detail > p{
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	padding: 5%;	
+	color: #fff;
+}
+.pricing-section {
+    height: auto;
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    text-align: center;
+    background: #fff;
+}
+
+.about-us-content-intro > p{
+	font-size: 18px;
+	text-align: center;
+	line-height: 150%;
+	padding: 5%;
+}
+.pricing-us-content-details .pricing-inner-detail > p{
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	padding: 5%;
+}
+.pricing-us-content-details .pricing-inner-detail > ul{
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	text-align: left;
+}
+.pricing-section .col-lg-12 > h4,
+.pricing-us-content-details .pricing-inner-detail > h4,h3{
+	color: #000;
+}
+.pricing-us-content-details .pricing-inner-detail{
+	border: 1px solid #ddd;
+	border-radius: 1%;
+	text-align: center;
+}
+.pricing-us-content-details .icons{
+	font-size: 30px;
+	color: rgb(34, 74, 221);
+	border: 0px solid #A3A3A3;
+}
+
+.contact-section {
+    height: auto;
+    padding-top: 100px; 
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../images/services-bg.jpeg') no-repeat bottom fixed; 
+}
+
+.contact-content-details .icons{
+	font-size: 200%;
+	color: rgb(34, 74, 221);
+	border: 0px solid #A3A3A3;
+}
+.contact-section .col-lg-12 > h1, h3{
+	color: #fff !important;
+}
+.contact-content-details .contact-inner-detail > h1,h2,h3,h4,h5{
+	color: #fff;
+}
+.contact-content-details .contact-inner-detail > p{
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	padding: 5%;	
+	color: #fff;
+}
+.contact-content-form{
+	color: #fff;
+	text-align: left;
+	font-size: 14px;
+}
+.container-footer{
+	height: auto;
+	margin-top: 5%;
+	color: #fff;
+	width: 100%;
+	padding: 0px;
+	margin-left:0px;
+	margin-right:0px;
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+}
+.footer-content{
+	text-align: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.social-link {
+	font-family: 'Lato';   
+}
+.footer-content .social-icon{
+	padding-right: 20px;
+	font-size: 18px;
+}
+
+
+/*MEMEBRS AREA */
+
+.login-section {
+    height: auto;
+    padding-top: 20%;
+    text-align: left;
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../images/welcome.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 0px;
+}
+.login-section .login-content .col-lg-12 > h4{
+	line-height: 150%;
+	text-align: justify;
+	padding: 5%;	
+	color: #fff;
+}
+.login-section .login-content{
+	color: #fff;
+}
+
+.yeeperks-section{
+	height: auto;
+    padding-top: 5%;
+    text-align: left;
+	background: #fff;/*inear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../images/welcome.jpg') no-repeat center center fixed; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.yeeperks-content .yeeperks-inner-detail > p{
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+}
+
+.yeeperks-content .yeeperks-inner-detail > ul{
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	text-align: left;
+}
+.yeeperks-content .col-lg-12 > h4,h2,h5,
+.yeeperks-content .yeeperks-inner-detail > h4,h3,h5{
+	color: #000;
+}
+.yeeperks-content .yeeperks-inner-detail{
+	border: 1px solid #ddd;
+	border-radius: 1%;
+	text-align: center;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	padding: 5px;
+	height: auto;
+	margin-bottom: 20px;
+}
+.yeeperks-content .yeeperks-inner-detail{
+	color: #fff !important;
+}
+.yeeperks-content .icons{
+	font-size: 50px;
+	color: rgb(34, 74, 221);
+	border: 0px solid #A3A3A3;
+}
+
+.yeeperks-see-more{
+	text-align: center;
+	padding: 1%;
+}
+
+.yeeperks-recent-content .col-lg-12 > h2{
+	font-size: 19px;
+	line-height: 150%;
+	text-align: left;
+	padding-top:0px;
+}
+.yeeperks-recent-content{
+	background: #ddd;
+	height: auto;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+.container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+.title {
+    font-size: 96px;
+}*/
+/*# sourceMappingURL=app-main-all.css.map */
